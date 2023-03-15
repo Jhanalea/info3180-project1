@@ -1,3 +1,162 @@
+
+body > header > nav {
+    background-color: #24b7a6 !important;
+
+}
+
+.navbar{
+  background-color: red;
+}
+
+
 body {
     padding-top: 5rem;
+    background-color: #f5f7fb;
+
+}
+
+.container-form-fields {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.container-form-fields h1 {
+    margin-top: 0;
+}
+
+.container-form-fields label {
+    font-weight: bold;
+}
+
+.container-form-fields .form-control {
+    margin-bottom: 10px;
+}
+
+
+.container-form-heading {
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.container-form-heading h1 {
+    font-weight: bold;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 20rem;
+    min-width: 280px;
+    max-width: 400px;
+}
+
+.card-single-property {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+    margin: 50px auto;
+    max-width: 900px;
+    align-items: center;
+}
+
+.card-body {
+    padding: 50px;
+
+}
+
+.card-single-property img {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.property-photo img {
+    width: 320px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.card-content {
+    height: 100%;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+.property-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #363e47;
+}
+
+.property-location {
+    font-weight: 400;
+    font-size: 14px;
+    color: #b0afb4;
+}
+
+.price {
+    padding: 8px 8px 8px 10px;
+    border-radius: 20px;
+    background: #539bf9;
+    color: white;
+    margin-top: auto;
+    width: 35%;
+    font-size: 12px;
+    text-align: center;
+}
+
+.view-property-btn {
+    padding: 15px;
+    background: #24b7a6;
+    color: white;
+    border-radius: 0px 0px 5px 5px;
+    margin-top: auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+img {
+    max-width: 100%;
+
+}
+
+.bed-bath p {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.card-subtitle {
+    margin-top: 5px;
+}
+
+.card-title {
+    padding-bottom: 10px;
+
 }

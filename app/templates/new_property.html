@@ -1,0 +1,73 @@
+ <title>New Property</title>
+{% extends "base.html" %}
+{% block main %}
+    <form id="add-property-form" method="POST" action="/properties/create" enctype="multipart/form-data">
+        {% include 'flash_messages.html' %}
+        {{ form.csrf_token }}
+
+        <div class="container-form-heading">
+            <h1 class="heading">Add New Property</h1>
+        </div>
+
+        <div class="container-form-fields">
+            <div class="row">
+                <div class="col-md-12">
+                    {{ form.title.label(class="form-label") }}
+                    {{ form.title(class="form-control", style="width: 100%;") }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    {{ form.description.label(class="form-label") }}
+                    {{ form.description(class="form-control", style="width: 100%;") }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    {{ form.no_rooms.label(class="form-label") }}
+                    {{ form.no_rooms(class="form-control", placeholder="3") }}
+                </div>
+
+                <div class="col-md-6">
+                    {{ form.no_bathrooms.label(class="form-label") }}
+                    {{ form.no_bathrooms(class="form-control") }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    {{ form.price.label(class="form-label") }}
+                    {{ form.price(class="form-control", placeholder="15,000,000") }}
+                </div>
+
+                <div class="col-md-6">
+                    {{ form.property_type.label(class="form-label") }}
+                    {{ form.property_type(class="form-select") }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    {{ form.location.label(class="form-label") }}
+                    {{ form.location(class="form-control", placeholder="10 Waterloo Rd") }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    {{ form.photo.label(class="form-label") }}
+                    {{ form.photo(class="form-control form-control-sm") }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-primary" type="submit">Add Property</button>
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}
+{% block css %}{% endblock %}

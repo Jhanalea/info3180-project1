@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+
+<div class="card-single-property" style="">
+  <img src="{{ url_for('get_photo', filename = property.photo) }}"  alt="Property Image">
+  <div class="card-body">
+      <h4 class="card-title">{{ property.title }}</h4>
+      <div>
+          <button class=" col-md-auto btn btn-default btn-sm rounded-pill " style="background-color:#539bf9;color:white;">${{ "{:,}".format(property.price) }}</button>
+          <button class=" col-md-auto btn btn-default btn-sm rounded-pill " style="background-color:#fac01b;color:white;"> {{ property.property_type.capitalize() }} </button>
+      </div>
+      <h6 class="text-muted card-subtitle mb-2">{{ property.description }}</h6>
+      <div class="bed-bath">
+          <p>{{ property.no_rooms }} Bedrooms</p>   <p>{{ property.no_bathrooms }} Bathrooms</p>
+          <br>
+          <p class="card-text"> {{ property.location }} </p>
+          <br>
+      </div>
+    <a href="#" class="btn btn-primary" style="background-color:#24b6a6; color:white; border:none;">Email Realtor</a>
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}
